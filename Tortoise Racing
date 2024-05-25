@@ -1,0 +1,2 @@
+def race(v1, v2, g):
+    return [int(g/(v2-v1)), int(g/(v2-v1)*60) % 60, int(g/(v2-v1)*3600) % 60] if v1 <= v2 else None
