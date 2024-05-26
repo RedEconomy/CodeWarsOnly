@@ -1,0 +1,9 @@
+def max_multiple(divisor, bound):
+list_i = []       #list of all divisible by divisor
+for i in range(bound + 1):
+  if i%divisor == 0:
+    list_i.append(i)
+return max(list_i)
+
+#list comprehension
+return max([i for i in range(bound+1) if i%divisor == 0])
