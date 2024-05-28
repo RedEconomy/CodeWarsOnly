@@ -1,0 +1,12 @@
+def reverse_letter(st):
+    list1 = []
+    for i in st:
+        if i.isalpha() == True:
+            list1.append(i)
+    return ''.join(list1)[::-1]
+#normal code
+
+
+def reverse_letter(st):
+  return ''.join([i for i in s if i.isalpha()])[::-1]
+#list comprehension
