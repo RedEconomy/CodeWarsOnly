@@ -1,0 +1,23 @@
+#forcing with a copy
+
+def draw(deck):
+    deck1 = deck.copy()
+    drawn_cards = []
+    for i in deck:
+        for i in deck:
+            if len(deck) != len(drawn_cards):
+                drawn_cards.append(deck1.pop(0))
+                if len(deck1) > 0:
+                    element = deck1.pop(0)
+                    deck1.append(element)
+
+
+    return drawn_cards
+
+#glueing with slices
+def draw(deck):
+    drawn_cards = []
+    while deck:
+        drawn_cards.append(deck[0])
+        deck = deck[2:] + deck[1:2]
+    return drawn_cards
