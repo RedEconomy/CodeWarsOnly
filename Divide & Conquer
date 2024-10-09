@@ -1,3 +1,3 @@
 def divide_conquer(x):
     return sum([i for i in x if type(i) == int]) - sum ([int(j) for j in x if type(j) == str])
-# first part takes the sum of all integers in the array 'x'. The second part takes all items 'i' with the type 'str', converts it into an integer and subtracts it from the first part
+# first part takes the sum of all integers in array 'x'. The second part takes all items 'i' with the type 'str', converts it into an integer and subtracts it from the first part
