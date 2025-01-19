@@ -1,23 +1,23 @@
 def zero(func=None, *args):
-    return int(func(0, *args)) if func else 0
+    return func(0, *args) if func else 0
 def one(func=None, *args):
-    return int(func(1, *args)) if func else 1
+    return func(1, *args) if func else 1
 def two(func=None, *args):
-    return int(func(2, *args)) if func else 2
+    return func(2, *args) if func else 2
 def three(func=None, *args):
-    return int(func(3, *args)) if func else 3
+    return func(3, *args) if func else 3
 def four(func=None, *args):
-    return int(func(4, *args)) if func else 4
+    return func(4, *args) if func else 4
 def five(func=None, *args):
-    return int(func(5, *args)) if func else 5
+    return func(5, *args) if func else 5
 def six(func=None, *args):
-    return int(func(6, *args)) if func else 6
+    return func(6, *args) if func else 6
 def seven(func=None, *args):
-    return int(func(7, *args)) if func else 7
+    return func(7, *args) if func else 7
 def eight(func=None, *args):
-    return int(func(8, *args)) if func else 8
+    return func(8, *args) if func else 8
 def nine(func=None, *args):
-    return int(func(9, *args)) if func else 9
+    return func(9, *args) if func else 9
 
 
 def plus(b): 
