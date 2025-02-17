@@ -20,7 +20,7 @@ def eight(func=None, *args):
 def nine(func=None, *args):
     return func(9, *args) if func else 9
 
-
+#Operation functions
 def plus(b): 
     return lambda a: a + b
 def minus(b): 
