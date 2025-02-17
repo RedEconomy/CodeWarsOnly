@@ -1,3 +1,4 @@
+#Singular functions
 def zero(func=None, *args):
     return func(0, *args) if func else 0
 def one(func=None, *args):
