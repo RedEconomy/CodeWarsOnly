@@ -1,0 +1,10 @@
+import collections
+
+def buy_fruits(price_labels, fruits_list):
+    fruits = collections.Counter(fruits_list)
+    sorted_fruit = sorted(fruits.keys(), key=lambda item: -fruits[item])
+    low_price = sorted(price_labels)[:len(sorted_fruit)]
+    high_price = sorted(price_labels, reverse= True)[:len(sorted_fruit)]
+    low_price_mapping = dict(zip(sorted_fruit, low_price))
+    high_price_mapping = dict(zip(sorted_fruit, high_price))
+    return sum(low_price_mapping[fruit] for fruit in fruits_list), sum(high_price_mapping[fruit] for fruit in fruits_list)
