@@ -1,3 +1,6 @@
+#Price labels have not been placed at the fruits stall, but the price labels can be seen and the grocery list contains the fruits needed for today.
+#Given the a list of price(priceLabels) and a list of fruits (fruitsList), the task is to calculate the minimum and maximum amount of money. Return a two-elements array [minimum , maximum].
+
 import collections
 
 def buy_fruits(price_labels, fruits_list):
